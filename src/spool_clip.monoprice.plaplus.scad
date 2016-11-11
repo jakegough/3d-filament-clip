@@ -6,16 +6,16 @@ default_shell_thickness = 2;
 
 // going clockwise looking at the clip, with the filament jaw on the right
 
-spool_clip_monoprice();
+spool_clip_monoprice_plaplus();
 
-module spool_clip_monoprice(
+module spool_clip_monoprice_plaplus(
     filament_diameter = default_filament_diameter,
     extrude_depth = default_extrude_depth,
     shell_thickness = default_shell_thickness,
-    segment_1 = 6,
-    segment_2 = 5.0,
-    segment_3 = 2.5,
-    segment_4 = 2.0
+    segment_1 = default_shell_thickness,
+    segment_2 = 2,
+    segment_3 = 8.1,
+    segment_4 = 2.75
 )
 {
     spool_clip(
